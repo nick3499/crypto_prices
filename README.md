@@ -1,9 +1,14 @@
 # crypto_prices
-Web App which Displays Current Crypto Prices in 4 Currencies
+
+Web app which displays current values of 8 current cryptos converted to 4 major currencies. See [CryptoCompare.com](https://www.cryptocompare.com/) API.
 
 ![crypto]
 
  - [cryptocompare.com API](https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC,BCH,XMR,DASH,NEO,ZEC&tsyms=USD,EUR,GBP)
+
+### Updating Prices
+
+To update prices, refresh the browser display.
 
 ### Additional Libraries
 
@@ -13,5 +18,8 @@ The following libraries are linked to the app:
  - [vue.min.js](https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js)
  - [axios.min.js](https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js)
 
-[crypto]: crypto-prices.png "crypto_prices"
+Foundation [CSS](https://foundation.zurb.com/sites/docs/v/5.5.3/css.html) is being used to style the cards container. [Vue.js](https://vuejs.org/) is used as a template system. [axios](https://github.com/axios/axios) is a Promise-based HTTP client used to pull data from the public [API](https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC&tsyms=USD).
 
+`styles/styles.js` modifies Foundation's default card styles.
+
+[crypto]: crypto-prices.png "crypto_prices"
