@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CryptoCurrency Pricing App</title>
+  <link rel="stylesheet" href="../styles/foundation.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+<!-- cards container -->
+<div class="container" id="app">
+  <h3 class="text-center">CryptoCurrency Pricing (BitInfoCharts API)</h3>
+  <div class="columns medium-4" v-for="(result, index) in results">
+    <div class="card">
+      <div class="card-divider">
+        <p> {{ index }} </p>
+      </div>
+      <div class="card-section">
+        <p>&#36; {{ result.USD }}</p>
+      </div>
+      <div class="card-section">
+        <p>&euro; {{ result.EUR }}</p>
+      </div>
+      <div class="card-section">
+        <p>&pound; {{ result.GBP }}</p>
+      </div>
+      <div class="card-section">
+        <p>&yen; {{ result.JPY }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../lib/vue.js"></script>
+<script src="../lib/axios.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
