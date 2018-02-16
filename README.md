@@ -1,4 +1,4 @@
-# crypto_prices
+# crypto_prices_cc_api
 
 Web app which displays current values of 8 current cryptos converted to 4 major currencies. See [CryptoCompare.com](https://www.cryptocompare.com/) API.
 
