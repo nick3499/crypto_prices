@@ -13,8 +13,8 @@ To update prices, refresh the browser display.
 ### Components
 
  - `styles/styles.js` modifies [Foundation CSS](https://foundation.zurb.com/sites/docs/v/5.5.3/css.html)' default card styles, found in the cards container.
- - `script.js` contains the `data` object which will list pulled `results`, found in the `Vue` object. Along with `axios` logic for getting the [API](https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC&tsyms=USD), found in the `mounted()` function.
- - `index.html`: `<div class="container" id="app">` couples content with data. [Vue.js](https://vuejs.org/) Template syntax can be seen in `<p>&euro; {{ result.EUR }}</p>`.
+ - `lib/script.js` contains the `data` object which will list pulled `results`, found in the `Vue` object. Along with `axios` logic for fetching data through the server's [API](https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC&tsyms=USD), found in the `mounted()` function.
+ - `index.html`: `<div class="container" id="app">` couples content with data. [Vue.js](https://vuejs.org/) Template syntax can be found in `<p>&euro; {{ result.EUR }}</p>`.
  
 ### Additional Libraries
 
