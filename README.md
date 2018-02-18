@@ -10,6 +10,12 @@ Web app which displays current prices of 8 cryptos converted to 4 major currenci
 
 To update prices, refresh the browser display.
 
+### Components
+
+ - `styles/styles.js` modifies [Foundation CSS](https://foundation.zurb.com/sites/docs/v/5.5.3/css.html)' default card styles, found in the cards container.
+ - `script.js` contains the `data` object which will list pulled `results`, found in the `Vue` object. Along with `axios` logic for getting the [API](https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC&tsyms=USD), found in the `mounted()` function.
+ - `index.html`: `<div class="container" id="app">` couples content with data. [Vue.js](https://vuejs.org/) Template syntax can be seen in `<p>&euro; {{ result.EUR }}</p>`.
+ 
 ### Additional Libraries
 
 The following libraries are linked to the app:
@@ -18,12 +24,8 @@ The following libraries are linked to the app:
  - [vue.min.js](https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js)
  - [axios.min.js](https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js)
 
-Foundation [CSS](https://foundation.zurb.com/sites/docs/v/5.5.3/css.html) is being used to style the cards container. [Vue.js](https://vuejs.org/) is used as a template system. [axios](https://github.com/axios/axios) is a Promise-based HTTP client used to pull data from the public [API](https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC&tsyms=USD).
-
-`styles/styles.js` modifies Foundation's default card styles.
-
-[crypto]: crypto-prices.png "crypto_prices"
-
 ### Related Tutorial
 
 - [How to Use Vue.js and Axios to Display Data from an API](https://www.digitalocean.com/community/tutorials/how-to-use-vue-js-and-axios-to-display-data-from-an-api)
+
+[crypto]: crypto-prices.png "crypto_prices"
