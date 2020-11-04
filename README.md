@@ -29,3 +29,5 @@ The following libraries are linked to the app:
 - [How to Use Vue.js and Axios to Display Data from an API](https://www.digitalocean.com/community/tutorials/how-to-use-vue-js-and-axios-to-display-data-from-an-api)
 
 [crypto]: crypto-prices.png "crypto_prices"
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R72LISM)
